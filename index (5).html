@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DJ अभिषेक झालदा — Official</title>
+  <meta name="description" content="DJ अभिषेक झालदा — Jhalda City No.1 Remixer. सुनिए और डाउनलोड कीजिए Jhalda Special Mix 2026." />
+  <meta name="keywords" content="DJ Abhishek Jhalda, Jhalda remix, remix 2026, bhangra, EDM, mixtape" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="DJ अभिषेक झालदा — Official" />
+  <meta property="og:description" content="Jhalda Special Mix 2026 — सुनिए और डाउनलोड कीजिए" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1514525253344-f814d0746b55?q=80&w=1200" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hi_IN" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DJ अभिषेक झालदा — Official" />
+  <meta name="twitter:description" content="Jhalda Special Mix 2026 — सुनिए और डाउनलोड कीजिए" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1514525253344-f814d0746b55?q=80&w=1200" />
+
+  <!-- Fonts (Devanagari friendly) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#ffcc00;
+      --bg-overlay: rgba(0,0,0,0.85);
+      --card-bg: rgba(255,255,255,0.06);
+      --muted:#bdbdbd;
+      --max-width:720px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Noto Sans Devanagari","Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      color:#fff;
+      background-color:#000;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+
+    /* Background image (decorative) */
+    .page-bg{
+      position:fixed;
+      inset:0;
+      background: url("https://images.unsplash.com/photo-1514525253344-f814d0746b55?q=80&w=2000") center/cover no-repeat fixed;
+      filter: saturate(0.9) contrast(0.85);
+      z-index: -2;
+    }
+    /* dark overlay for contrast */
+    .overlay{position:relative;min-height:100vh;background:var(--bg-overlay);display:flex;flex-direction:column;align-items:center;}
+
+    header{width:100%;padding:44px 16px;border-bottom:4px solid var(--accent);text-align:center}
+    header h1{margin:0;font-size:28px;color:var(--accent);letter-spacing:1px;text-transform:uppercase;text-shadow:2px 2px 8px rgba(255,204,0,0.35)}
+    header p{margin:6px 0 0;color:var(--muted)}
+
+    .container{width:100%;max-width:var(--max-width);padding:24px;flex:1;display:flex;flex-direction:column;align-items:stretch;gap:12px}
+    h2.section-title{color:var(--accent);margin:0 0 6px;font-size:18px}
+    .song-card{
+      display:flex;align-items:center;gap:12px;padding:14px;border-radius:10px;background:var(--card-bg);border-left:5px solid var(--accent);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+    .info{flex:1;text-align:left}
+    .title{font-weight:700}
+    .meta{font-size:13px;color:#d0d0d0;margin-top:4px}
+    .actions{display:flex;gap:8px;align-items:center}
+    .btn{
+      background:var(--accent);color:#000;padding:10px 12px;border-radius:6px;text-decoration:none;font-weight:700;font-size:13px;border:none;cursor:pointer;
+      display:inline-flex;align-items:center;gap:8px;
+    }
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(255,204,0,0.14);}
+    a.btn:focus,a.btn:focus-visible{outline:3px solid rgba(255,204,0,0.35);outline-offset:3px}
+
+    /* audio player styling fallback */
+    .player{margin-top:8px}
+    audio{width:100%;max-width:360px;display:block}
+
+    footer{width:100%;padding:18px 16px;text-align:center;color:#9a9a9a;font-size:13px;border-top:1px solid rgba(255,255,255,0.02)}
+
+    /* watermark */
+    .watermark{
+      position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-30deg);
+      font-size:64px;color:rgba(255,255,255,0.04);z-index:-1;white-space:nowrap;font-weight:800;pointer-events:none;
+    }
+
+    /* accessibility helpers */
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;border:0;padding:0;margin:-1px}
+
+    /* responsive */
+    @media (max-width:480px){
+      header{padding:28px 12px}
+      .watermark{font-size:38px}
+      .btn{padding:8px 10px;font-size:12px}
+      .container{padding:16px}
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion:reduce){
+      *{transition:none!important;animation:none!important}
+    }
+  </style>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <div class="overlay" role="document">
+    <div class="watermark" aria-hidden="true">DJ ABHISHEK JHALDA</div>
+
+    <header role="banner" aria-labelledby="site-title">
+      <h1 id="site-title">DJ अभिषेक झालदा</h1>
+      <p>Jhalda City No. 1 Remixer</p>
+    </header>
+
+    <main id="main" class="container" role="main" aria-labelledby="mixes-title">
+      <h2 id="mixes-title" class="section-title">नये धमाकेदार रिमिक्स</h2>
+
+      <section aria-labelledby="jhalda-mix" class="mix-list">
+        <article class="song-card" aria-labelledby="mix-2026-title" role="article">
+          <div class="info">
+            <div id="mix-2026-title" class="title">Jhalda Special Mix 2026</div>
+            <div class="meta">Artist: DJ Abhishek Jhalda • Length: ~60 min (approx)</div>
+
+            <!-- Inline audio player: replace src with your hosted MP3/OGG -->
+            <div class="player" aria-label="Audio player for Jhalda Special Mix 2026">
+              <audio controls preload="none">
+                <source src="media/Jhalda_Special_Mix_2026.mp3" type="audio/mpeg">
+                <source src="media/Jhalda_Special_Mix_2026.ogg" type="audio/ogg">
+                आपका ब्राउज़र ऑडियो टैग का समर्थन नहीं करता।
+              </audio>
+            </div>
+          </div>
+
+          <div class="actions" role="group" aria-label="Actions">
+            <!-- The download attribute works if file is on same-origin or appropriate CORS headers are set on remote host -->
+            <a class="btn" href="media/Jhalda_Special_Mix_2026.mp3" download="Jhalda_Special_Mix_2026.mp3" aria-label="Download Jhalda Special Mix 2026">DOWNLOAD</a>
+            <a class="btn secondary" href="#contact" aria-label="Contact DJ Abhishek Jhalda">CONTACT</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      © 2026 DJ ABHISHEK JHALDA | For Madhu ❤️
+      <div id="contact" style="margin-top:10px;font-size:12px;color:#888">Email: <a href="mailto:info@jhaldadj.com" style="color:var(--accent)">info@jhaldadj.com</a></div>
+    </footer>
+  </div>
+
+  <!-- Structured data for better search engine understanding -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicAlbum",
+    "name": "Jhalda Special Mix 2026",
+    "byArtist": {
+      "@type": "MusicGroup",
+      "name": "DJ Abhishek Jhalda"
+    },
+    "datePublished": "2026",
+    "url": "",
+    "inLanguage": "hi",
+    "description": "Jhalda Special Mix 2026 by DJ Abhishek Jhalda — energetic remixes from Jhalda City."
+  }
+  </script>
+</body>
+</html>
