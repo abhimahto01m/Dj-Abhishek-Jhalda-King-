@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ अभिषेक झालदा Official</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: #000 url('https://images.unsplash.com/photo-1514525253344-f814d0746b55?q=80&w=2000') no-repeat center center fixed; 
+            background-size: cover; 
+            font-family: sans-serif;
+            color: white;
+        }
+        .overlay { background: rgba(0, 0, 0, 0.85); min-height: 100vh; text-align: center; }
+        .header { padding: 50px 10px; border-bottom: 4px solid #ffcc00; }
+        h1 { font-size: 35px; color: #ffcc00; text-transform: uppercase; margin: 0; text-shadow: 2px 2px 10px rgba(255,204,0,0.5); }
+        .watermark { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-30deg); font-size: 60px; color: rgba(255,255,255,0.05); z-index: -1; white-space: nowrap; font-weight: bold; }
+        .container { padding: 20px; max-width: 500px; margin: auto; }
+        .song-card { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; margin: 10px 0; display: flex; align-items: center; border-left: 5px solid #ffcc00; }
+        .info { flex-grow: 1; text-align: left; padding-left: 10px; }
+        .dl-btn { background: #ffcc00; color: #000; padding: 10px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 12px; }
+        footer { padding: 20px; font-size: 12px; color: #777; }
+    </style>
+</head>
+<body>
+    <div class="watermark">DJ ABHISHEK JHALDA</div>
+    <div class="overlay">
+        <div class="header">
+            <h1>DJ अभिषेक झालदा</h1>
+            <p>Jhalda City No. 1 Remixer</p>
+        </div>
+        <div class="container">
+            <h3 style="color:#ffcc00">नये धमाकेदार रिमिक्स</h3>
+            <div class="song-card">
+                <div class="info">
+                    <div style="font-weight:bold">Jhalda Special Mix 2026</div>
+                    <div style="font-size:11px; color:#aaa">Artist: DJ Abhishek Jhalda</div>
+                </div>
+                <a href="#" class="dl-btn">DOWNLOAD</a>
+            </div>
+        </div>
+        <footer>
+            © 2026 DJ ABHISHEK JHALDA | For Madhu ❤️
+        </footer>
+    </div>
+</body>
+</html>
